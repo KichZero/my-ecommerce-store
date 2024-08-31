@@ -7,7 +7,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_API_URL;
+
+// заняться этим позже ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+// const apiUrl = process.env.REACT_APP_API_URL;
 
 // Асинхронный экшен для загрузки товаров
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
