@@ -9,12 +9,19 @@ import axios from 'axios';
 
 
 // заняться этим позже ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-// const apiUrl = process.env.REACT_APP_API_URL;
+// const apiUrl = 'https://example.com/api/products';  Укажите реальный URL для получения товаров
+// пока api нету временное решение тестовые локальные  данные 
+const mockProducts = [
+  { id: 1, name: 'Футболка', category: 'Одежда', price: 1200 },
+  { id: 2, name: 'Кроссовки', category: 'Обувь', price: 5000 },
+  // Добавьте больше тестовых товаров
+];
 
 // Асинхронный экшен для загрузки товаров
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-  const response = await axios.get(`${apiUrl}/products`);
-  return response.data;
+  return mockProducts; // Возвращаем локальные данные вместо запроса к API
+  // const response = await axios.get(apiUrl);
+  // return response.data;
 });
 
 const productsSlice = createSlice({

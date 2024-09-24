@@ -1,11 +1,11 @@
 // главная страница
 import React from 'react';
+import '../styles/homeFirst.css'
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Добро пожаловать в наш магазин!</h1>
-      <p>Здесь вы найдете лучшие товары по выгодным ценам.</p>
+    <div className='homeMain'>
+      <img className='textHome' src="./HomeText.svg" alt="" />
     </div>
   );
 };

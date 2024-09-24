@@ -1,28 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #333;
-    color: white;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #FFFFFF;
+  position: relative;
   
-  .navbar-logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
-  }
+}
+
+.navbar-left {
+  display: flex;
+  gap: 20px;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 24px; 
+}
+
+.navbar-categories {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-categories li a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+.navbar-categories li a:hover {
+  color: #000;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  padding-right: 3%;
+}
+
+.navbar-icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+.navbar-icons li a img {
+  width: 20px; /* Размер иконок можно подогнать по твоему макету */
+  height: 20px;
+}

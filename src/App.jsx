@@ -9,14 +9,20 @@ import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import { ToastContainer } from 'react-toastify';
+import Menu from "./components/Menu.jsx";
+import '../src/styles/index.css'
+
 
 const stripePromise = loadStripe('your-stripe-public-key');
 
 const App = () => {
   return (
     <Elements stripe={stripePromise}>
+      <ToastContainer />
     <Router>
       <Navbar />
+      <Menu />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
