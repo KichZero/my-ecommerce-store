@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CheckoutForm from '../components/CheckoutForm';
+import CheckoutForm from '../components/payment/CheckoutForm';
 
 const CheckoutPage = () => {
   const [name, setName] = useState('');

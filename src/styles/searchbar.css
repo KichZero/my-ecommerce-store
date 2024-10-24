@@ -1,0 +1,62 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Позиционирование контейнера */
+  }
+  
+  .search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 2; /* Иконка всегда над строкой поиска */
+  }
+  
+  .search-input {
+    position: absolute; /* Абсолютное позиционирование строки поиска */
+    right: 0; /* Строка будет расширяться влево */
+    padding-right: 30px; /* Отступ для иконки */
+    outline: none;
+    width: 0; /* Начальная ширина */
+    height: 30px; /* Высота строки */
+    border: none;
+    border-radius: 15px;
+    transition: width 0.3s ease; /* Плавное появление */
+    background-color: transparent;
+    z-index: 1; /* Строка поиска ниже иконки */
+  }
+  
+  .search-input.active {
+    padding-left: 20px;
+    width: 300px; /* Ширина при активации */
+    border: 1px solid #000; /* Добавляем контур */
+  }
+  
+  .search-input.active {
+    width: 300px; /* Ширина при активации */
+    border: 1px solid #000; /* Добавляем контур */
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 40px; /* Расположение ниже строки поиска */
+    left: auto;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 375px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }

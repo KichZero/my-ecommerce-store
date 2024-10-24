@@ -10,8 +10,9 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import { ToastContainer } from 'react-toastify';
-import Menu from "./components/Menu.jsx";
+import MainCard from './components/cards/MainCard.jsx';
 import '../src/styles/index.css'
+import MenuDropdown from './components/menudropdown/Menu.jsx';
 
 
 const stripePromise = loadStripe('your-stripe-public-key');
@@ -22,7 +23,7 @@ const App = () => {
       <ToastContainer />
     <Router>
       <Navbar />
-      <Menu />
+      <MenuDropdown />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
+      <MainCard />
       <Footer />
     </Router>
   </Elements>

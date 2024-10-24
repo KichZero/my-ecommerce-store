@@ -1,5 +1,5 @@
 import React from 'react';
-import './Input.css'; // Подключение стилей
+import '../styles/input.css'; // Подключение стилей
 
 const Input = ({ value, onChange, placeholder, type = 'text' }) => {
   return (

@@ -1,0 +1,48 @@
+
+.card-page {
+  justify-content: center;
+  padding: 80px 0px 80px 0px;
+  width: 100%;
+}
+
+.section-cards {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap; 
+  padding: 0 20px 0 20px;
+}
+
+.card-one {
+  max-width: 305px;
+  /* height: 473px; */
+
+  background-color: #fff;
+}
+
+.card-one img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 8px;
+
+  p{
+font-size: 20px;
+font-weight: 400;
+line-height: 8px;
+
+
+  }
+  
+}
+
+.card-one:hover {
+
+  cursor: pointer;
+}

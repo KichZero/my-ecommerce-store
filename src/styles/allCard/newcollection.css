@@ -1,0 +1,96 @@
+.collection-container {
+    text-align: center;
+    padding-top: 80px;
+    
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto; 
+
+
+   
+        h2 {
+            font-family: Comfortaa;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 35.68px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    
+  }
+
+  
+  
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .collection-card {
+    position: relative;
+    width: calc(33.33% - 20px); /* Точно выровнять с учетом gap */
+    max-width: 400px; /* Максимальная ширина для карточек */
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    /* transition: transform 0.3s ease; */
+  }
+  
+  /* .collection-card:hover {
+    transform: translateY(-10px);
+  } */
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .new-badge {
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center;     /* Вертикальное выравнивание по центру */
+    text-align: center;
+    width: 58px;
+    height: 26px;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  .shop-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  .shop-button:hover {
+    background-color: #ccc;
+  }
+  

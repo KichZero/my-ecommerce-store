@@ -1,0 +1,118 @@
+.slider-container {
+  padding: 80px 80px;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: visible;
+  text-align: left;
+  color: #060000;
+}
+
+.slider-container h2 {
+  font-family: Comfortaa;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35.68px;
+  width: 236px;
+  height: 36px;
+  margin: 0 auto 40px; /* Центрирование заголовка и отступ снизу */
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-card {
+  width: 276px !important;
+  height: 488px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.product-card img {
+  width: 276px;
+  height: 392px;
+  display: block;
+  position: relative;
+  border-radius: 0 !important;
+
+ 
+}
+
+.sale-badge {
+  position: absolute;
+  top: 26px;
+  left: 10px;
+  width: 58px;
+  padding: 2px;
+  background-color: #fff;
+  color: #D34040;
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+.product-name {
+  font-size: 16px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3em;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: red !important;
+  margin-top: auto; /* Зафиксируем цену внизу карточки */
+}
+
+/* arrows */
+.prev,
+.next {
+  color: #060000 !important;
+  font-size: 24px !important;
+  background: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev {
+  left: -50px !important;
+}
+
+.next {
+  right: -50px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow:hover {
+  filter: invert(1);
+}
+
+.product-card:focus, .product-card img:focus {
+  outline: none;
+}

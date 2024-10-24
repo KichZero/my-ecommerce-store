@@ -1,0 +1,26 @@
+.brands-container {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.brands-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 35.68px;
+}
+
+.brands-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-image {
+    width: 331px;
+    height: 194px;
+    object-fit: cover;
+}
