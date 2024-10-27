@@ -53,8 +53,10 @@
   }
   
   .suggestion-item {
+ 
     padding: 10px;
     cursor: pointer;
+   
   }
   
   .suggestion-item:hover {

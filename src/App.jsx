@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
@@ -12,18 +12,29 @@ import CheckoutPage from './pages/CheckoutPage';
 import { ToastContainer } from 'react-toastify';
 import MainCard from './components/cards/MainCard.jsx';
 import '../src/styles/index.css'
-import MenuDropdown from './components/menudropdown/Menu.jsx';
+import MenuDropdown from './components/menudropdown/MenuDropdown.jsx';
 
 
 const stripePromise = loadStripe('your-stripe-public-key');
 
+
+
 const App = () => {
+
+  const [selectedCategory, setSelectedCategory] = useState("default");
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+  
   return (
     <Elements stripe={stripePromise}>
       <ToastContainer />
     <Router>
-      <Navbar />
-      <MenuDropdown />
+  
+      <Navbar onCategoryChange={handleCategoryChange} />
+      <MenuDropdown selectedCategory={selectedCategory} />
+      {/* Остальные компоненты */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
