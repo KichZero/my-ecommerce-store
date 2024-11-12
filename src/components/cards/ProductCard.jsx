@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
@@ -35,7 +36,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="product-card">
+    <div className="all-card">
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
       <p>{product.price} руб.</p>

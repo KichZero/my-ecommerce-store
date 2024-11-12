@@ -11,7 +11,11 @@ const MenuItem = ({ title, subCategories }) => {
     >
       <span className="menu-title">{title}</span>
       {isOpen && subCategories && subCategories.length > 0 && (
-        <div className="dropdown-menu">
+        <div
+          className="dropdown-menu"
+          onMouseEnter={() => setIsOpen(true)} // Сохраняем меню открытым при наведении на него
+          onMouseLeave={() => setIsOpen(false)} // Закрываем меню при выходе курсора
+        >
           {subCategories.map((category, index) => (
             <div key={index} className="dropdown-column">
               <span className="category-title">{category.category}</span>

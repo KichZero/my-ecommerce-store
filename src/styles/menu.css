@@ -27,6 +27,14 @@
   .menu-item:hover .menu-title {
     font-weight: bold;
   }
+
+  .menu-item:hover .submenu {
+    display: block; /* Убедитесь, что подменю отображается при наведении на родительский элемент */
+  }
+  
+  .submenu-item:hover .sub-submenu {
+    display: block; /* Убедитесь, что подкатегории отображаются при наведении на подразделы */
+  }
   
   .dropdown-menu {
     font-family: 'Montserrat', sans-serif;
@@ -35,6 +43,7 @@
     flex-wrap: nowrap;
     position: absolute;
     top: 190%;
+   
     left: 0;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

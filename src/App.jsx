@@ -10,7 +10,7 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import { ToastContainer } from 'react-toastify';
-import MainCard from './components/cards/MainCard.jsx';
+
 import '../src/styles/index.css'
 import MenuDropdown from './components/menudropdown/MenuDropdown.jsx';
 
@@ -42,7 +42,7 @@ const App = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
-      <MainCard />
+      
       <Footer />
     </Router>
   </Elements>

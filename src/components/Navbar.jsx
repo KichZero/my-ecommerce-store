@@ -1,18 +1,50 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import SearchBar from "./SearchBar";
 
 const Navbar = ({ onCategoryChange }) => {
+  const location = useLocation(); // Получаем текущий путь
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  // Определяем выделенный раздел в зависимости от текущего пути
+  useEffect(() => {
+    if (location.pathname === "/woman") {
+      setSelectedCategory("woman");
+    } else if (location.pathname === "/man") {
+      setSelectedCategory("man");
+    } else {
+      setSelectedCategory(""); // Если на главной странице
+    }
+  }, [location]);
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <ul className="navbar-categories">
           <li>
-            <Link to="/" onClick={() => onCategoryChange("woman")}>Woman</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                onCategoryChange("woman");
+                setSelectedCategory("woman");
+              }}
+              className={selectedCategory === "woman" ? "active" : ""}
+            >
+              Woman
+            </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => onCategoryChange("man")}>Men</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                onCategoryChange("man");
+                setSelectedCategory("man");
+              }}
+              className={selectedCategory === "man" ? "active" : ""}
+            >
+              Men
+            </Link>
           </li>
         </ul>
       </div>

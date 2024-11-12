@@ -26,10 +26,12 @@
 .navbar-categories li a {
   color: #A8A8A8;
   text-decoration: none;
+  transition: color 0.3s ease; /* Плавный переход */
 }
 
-.navbar-categories li a:hover {
-  color: #000;
+.navbar-categories li a:hover,
+.navbar-categories li a.active {
+  color: #000; /* Цвет для активного и наведенного элемента */
 }
 
 .navbar-logo {

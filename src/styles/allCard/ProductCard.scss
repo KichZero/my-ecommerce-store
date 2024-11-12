@@ -1,34 +1,32 @@
-.product-card {
-  border: 1px solid #ddd;
+.all-card {
   border-radius: 8px;
   padding: 16px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px;
 }
 
-.product-card img {
+.all-card img {
   max-width: 100%;
   border-radius: 8px;
 }
 
-.product-card h2 {
+.all-card h2 {
   font-size: 1.5rem;
   margin: 16px 0;
 }
 
-.product-card p {
+.all-card p {
   font-size: 1.2rem;
   color: #333;
 }
 
-.product-card select {
+.all-card select {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.product-card button {
+.all-card button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -37,6 +35,6 @@
   cursor: pointer;
 }
 
-.product-card button:hover {
+.all-card button:hover {
   background-color: #0056b3;
 }
