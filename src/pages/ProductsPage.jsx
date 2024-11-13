@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import { fetchProducts } from '../redux/productsSlice';
 import ProductCard from '../components/cards/ProductCard';
 
 const ProductsPage = () => {
+  const location = useLocation();
   const dispatch = useDispatch();
   const { items, status, error } = useSelector((state) => state.products);
 
@@ -15,11 +17,25 @@ const ProductsPage = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const categoryFromUrl = queryParams.get('category');
+    if (categoryFromUrl) {
+      setSelectedCategory(categoryFromUrl);
+    }
+  }, [location.search]);
+
   const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
   const handleSizeChange = (e) => setSelectedSize(e.target.value);
-  const handlePriceChange = (e) => setSelectedPriceRange([e.target.value[0], e.target.value[1]]);
+  const handlePriceChange = (e) => setSelectedPriceRange([0, e.target.value]);
+
+  // Проверка данных товаров перед фильтрацией
+  console.log("Все товары:", items);
 
   const filteredProducts = items.filter((product) => {
+    // Логируем каждый товар, чтобы понять, почему он не проходит фильтрацию
+    console.log("Фильтрация товара:", product);
+
     return (
       (selectedCategory === 'Все' || product.category === selectedCategory) &&
       (selectedSize === 'Все' || product.sizes.includes(selectedSize)) &&
@@ -27,6 +43,9 @@ const ProductsPage = () => {
       product.price <= selectedPriceRange[1]
     );
   });
+
+  // Проверка после фильтрации
+  console.log("Отфильтрованные товары:", filteredProducts);
 
   if (status === 'loading') {
     return <p>Загрузка товаров...</p>;
@@ -37,7 +56,7 @@ const ProductsPage = () => {
   }
 
   return (
-    <div>
+    <div className="products-page">
       <h1>Каталог товаров</h1>
 
       {/* Фильтры */}
@@ -72,9 +91,13 @@ const ProductsPage = () => {
 
       {/* Карточки товаров */}
       <div className="product-list">
-        {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
+        ) : (
+          <p>Нет товаров по выбранным фильтрам</p>
+        )}
       </div>
     </div>
   );

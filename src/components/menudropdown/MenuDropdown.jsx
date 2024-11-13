@@ -642,7 +642,9 @@ const MenuDropdown = ({ selectedCategory }) => {
 
   return (
     <div className="menu">
+      
       {currentMenuItems.map((item, index) => (
+        
         <MenuItem key={index} title={item.title} subCategories={item.subCategories} />
       ))}
     </div>

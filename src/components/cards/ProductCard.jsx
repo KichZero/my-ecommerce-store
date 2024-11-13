@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../../styles/allCard/ProductCard.scss'
+import '../../styles/pages/ProductCard.scss'
 import { addToCart } from '../../redux/cartSlice'; 
 
 const ProductCard = ({ product }) => {
