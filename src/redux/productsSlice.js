@@ -4,25 +4,22 @@
 // 	3.	Redux-слайсы: Если вы используете Redux для управления состоянием, переменные окружения можно использовать для настройки асинхронных экшенов.
 // Использование переменной apiUrl в этих местах помогает сделать код более гибким и позволяет легко изменить базовый URL для всех запросов, просто обновив значение в .env файле.
 
+
+// productsSlice.js
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+const apiUrl = 'https://fakestoreapi.com/products';
 
-// заняться этим позже ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-// const apiUrl = 'https://example.com/api/products';  Укажите реальный URL для получения товаров
-// пока api нету временное решение тестовые локальные  данные 
-const mockProducts = [
-  { id: 1, name: 'Футболка', category: 'Одежда', price: 1200 },
-  { id: 2, name: 'Кроссовки', category: 'Обувь', price: 5000 },
-  // Добавьте больше тестовых товаров
-];
-
-// Асинхронный экшен для загрузки товаров
-export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-  return mockProducts; // Возвращаем локальные данные вместо запроса к API
-  // const response = await axios.get(apiUrl);
-  // return response.data;
-});
+// Асинхронный экшен для загрузки товаров с параметрами пагинации
+export const fetchProducts = createAsyncThunk(
+  'products/fetchProducts',
+  async ({ limit, page }) => {
+    const response = await axios.get(`${apiUrl}?limit=${limit}&page=${page}`);
+    return response.data;
+  }
+);
 
 const productsSlice = createSlice({
   name: 'products',
@@ -30,8 +27,14 @@ const productsSlice = createSlice({
     items: [],
     status: 'idle',
     error: null,
+    currentPage: 1,
+    totalItems: 0,
   },
-  reducers: {},
+  reducers: {
+    setCurrentPage(state, action) {
+      state.currentPage = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
@@ -48,4 +51,5 @@ const productsSlice = createSlice({
   },
 });
 
+export const { setCurrentPage } = productsSlice.actions;
 export default productsSlice.reducer;
