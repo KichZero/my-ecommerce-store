@@ -121,9 +121,9 @@ const FilterPanel = ({ filters, setFilters }) => {
       </div>
 
       {/* Размер */}
-      <div  id="size-parametr" className="filter-group">
+      <div className="filter-group">
         <h4>Size</h4>
-        <ul className="filter-options">{renderFilterOptions("size", sizes)}</ul>
+        <ul className="filter-options sizes">{renderFilterOptions("size", sizes)}</ul>
       </div>
 
       {/* Материал */}
@@ -150,9 +150,10 @@ const FilterPanel = ({ filters, setFilters }) => {
             handleFilterChange("priceRange", [1, +e.target.value])
           }
         />
-        <p>
-          ${filters.priceRange[0]} - ${filters.priceRange[1]}
-        </p>
+        <div className="price-slider">
+    <span>${filters.priceRange[0]}</span>
+    <span>${filters.priceRange[1]}</span>
+  </div>
       </div>
     </aside>
   );
