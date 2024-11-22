@@ -4,8 +4,6 @@ import { addToCart } from '../../redux/cartSlice';
 import '../../styles/pages/ProductCard.scss';
 
 const ProductCard = ({ product }) => {
-
-
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || '');
 
@@ -18,16 +16,19 @@ const ProductCard = ({ product }) => {
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
       <p>${product.price}</p>
+      
+      {/* Защита от ошибок при отсутствии sizes */}
       <select
         value={selectedSize}
         onChange={(e) => setSelectedSize(e.target.value)}
       >
-        {product.sizes.map((size) => (
+        {(product.sizes || []).map((size) => (
           <option key={size} value={size}>
             {size}
           </option>
         ))}
       </select>
+
       <button onClick={handleAddToCart}>Add to Cart</button>
     </div>
   );

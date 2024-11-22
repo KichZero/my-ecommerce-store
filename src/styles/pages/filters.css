@@ -1,17 +1,27 @@
+/* Подключаем шрифт, если это еще не сделано */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 /* Главный контейнер фильтрации */
 .filters-container {
   width: 220px;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  font-family: 'Montserrat', sans-serif; /* Подключаем шрифт */
 }
 
-/* Заголовок фильтрации */
+/* Заголовок фильтрации (используем стиль body text medium 16px) */
 .filters-container h3 {
+  max-width: 153px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px; /* Размер шрифта */
+  font-weight: 500; /* Вес шрифта */
+  line-height: 19.5px; /* Высота строки */
   color: #333;
+  text-align: left;
+  border-bottom: 1px solid #C9C9C9; /* Линия под текстом */
+  padding-bottom: 8px; /* Отступ снизу для пространства между текстом и линией */
 }
 
 /* Каждая группа фильтров */
@@ -19,10 +29,15 @@
   margin-bottom: 25px;
 }
 
+/* Заголовок группы фильтров (используем стиль body text medium 16px) */
 .filter-group h4 {
+  padding-left: 6%;
   margin-bottom: 10px;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
   color: #555;
+  text-align: left;
 }
 
 /* Список фильтров */
@@ -31,24 +46,46 @@
   padding: 0;
 }
 
+/* Элемент фильтра (используем стиль body text regular 14px) */
 .filter-item {
-  padding: 10px 15px;
+  padding: 1px 15px;
   margin-bottom: 5px;
   cursor: pointer;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif; /* Шрифт для текста */
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 400; /* Вес шрифта */
+  line-height: 17.07px; /* Высота строки */
+  transition: background-color 0.3s;
 }
 
-.filter-item.active,
+/* Убираем выделение синего цвета при наведении */
 .filter-item:hover {
-  background-color: #007bff;
-  color: #fff;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Квадрат слева от названия фильтра (CHECKBOX) */
+.filter-checkbox {
+  width: 15px;
+  height: 15px;
+  border-radius: 30%;
+  background-color: transparent;
+  border: 1px solid #A8A8A8;
+  transition: background-color 0.3s;
+}
+
+/* Когда фильтр выбран */
+.filter-checkbox.checked {
+  background-color: #A8A8A8;
 }
 
 /* Цветные круги */
 .color-options {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
@@ -56,19 +93,65 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 2px solid transparent;
   cursor: pointer;
   transition: transform 0.2s, border-color 0.2s;
 }
 
 .color-circle:hover,
 .color-circle.selected {
-  transform: scale(1.2);
-  border-color: #007bff;
+  transform: scale(1.1);
+  border: 1px solid #000000;
 }
 
-/* Ползунок цен */
+/* Размеры */
+#size-parametr {
+  
+}
+
+.size-options {
+  display: grid;
+  flex-wrap: wrap; /* Разрешаем обтекание элементов */
+  gap: 10px;
+}
+
+.size-box {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  min-width: 60px; /* Минимальная ширина для каждого элемента */
+  text-align: center; /* Выравнивание текста по центру */
+  height: 35px; /* Устанавливаем высоту для размера */
+}
+
+/* Стили для правой стороны */
+.size-box.right-side {
+  margin-left: auto; /* Выравнивание по правому краю */
+}
+
+/* Стили для ползунка */
 input[type='range'] {
+  appearance: none; /* Убираем стандартный стиль браузера */
   width: 100%;
-  margin: 10px 0;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
 }

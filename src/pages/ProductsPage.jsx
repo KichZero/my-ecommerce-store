@@ -1,3 +1,5 @@
+// страница товаров с фильтром 
+
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/productsSlice';
