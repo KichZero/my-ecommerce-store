@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-.product-card {
+.product-card-special {
   width: 276px !important;
   height: 488px !important;
   display: flex !important;
@@ -41,7 +41,7 @@
   outline: none;
 }
 
-.product-card img {
+.product-card-special img {
   width: 276px;
   height: 392px;
   display: block;
@@ -74,7 +74,7 @@
   margin-top: 8px;
 }
 
-.product-price {
+.product-price-special {
   font-size: 18px;
   color: red !important;
   margin-top: auto; /* Зафиксируем цену внизу карточки */

@@ -6,18 +6,21 @@
 
 
 // productsSlice.js
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'https://fakestoreapi.com/products';
+// Импортируем ваш fake JSON
+import fakeProducts from '../redux/fakeAPI.json';
 
 // Асинхронный экшен для загрузки товаров с параметрами пагинации
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async ({ limit, page }) => {
-    const response = await axios.get(`${apiUrl}?limit=${limit}&page=${page}`);
-    return response.data;
+    // Вместо реального API, будем использовать fakeProducts
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedProducts = fakeProducts.slice(startIndex, endIndex);
+    return paginatedProducts;
   }
 );
 
@@ -28,7 +31,7 @@ const productsSlice = createSlice({
     status: 'idle',
     error: null,
     currentPage: 1,
-    totalItems: 0,
+    totalItems: fakeProducts.length,
   },
   reducers: {
     setCurrentPage(state, action) {

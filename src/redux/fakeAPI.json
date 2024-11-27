@@ -1,0 +1,380 @@
+[
+  {
+    "id": 0,
+    "title": "Safari Evening by LuxeWear",
+    "price": 17.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 1,
+    "title": "Royal Elegance by Glamouria",
+    "price": 48.00,
+    "image": "public/UpdateShop/ca2.svg"
+  },
+  {
+    "id": 2,
+    "title": "imeless Classic by VelvetRose",
+    "price": 77.00,
+    "image": "public/UpdateShop/ca3.svg"
+  },
+  {
+    "id": 3,
+    "title": "Summer Breeze by SunChic",
+    "price": 12.00,
+    "image": "public/UpdateShop/ca4.svg"
+  },
+  {
+    "id": 4,
+    "title": "Delicate Grace by PureSilk",
+    "price": 22.00,
+    "image": "public/UpdateShop/ca5.svg"
+  },
+  {
+    "id": 5,
+    "title": "CityStyle Urban Lily Minimalist Dress with Floral Accents",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca6.svg"
+  },
+  {
+    "id": 6,
+    "title": "Moonlit Couture Magical Night Sequin Embellished Evening",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca7.svg"
+  },
+  {
+    "id": 7,
+    "title": "SweetPetal Tender Dreams Chiffon Dress",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca8.svg"
+  },
+  {
+    "id": 8,
+    "title": "AuraFashion Golden Sunset Maxi Dress",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca9.svg"
+  },
+  {
+    "id": 9,
+    "title": "Midnight Glow Starlit Night Beaded Evening Dress",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca10.svg"
+  },
+  {
+    "id": 10,
+    "title": "BlossomQueen Orchid Mystery Dress with Exotic",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca11.svg"
+  },
+  {
+    "id": 11,
+    "title": "SatinSecrets Silk Romance Open Back Gown in Smooth Silk",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca12.svg"
+  },
+  {
+    "id": 12,
+    "title": "BloomBelle Spring Shine Floral Day Dress",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca13.svg"
+  },
+  {
+    "id": 13,
+    "title": "AquaWear Ocean Fantasy Blue Dress Inspired by Sea Tones",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca14.svg"
+  },
+  {
+    "id": 14,
+    "title": "GlitterGown Evening Sparkle Glitter",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca15.svg"
+  },
+  {
+    "id": 15,
+    "title": "GardenGlam Floral Paradise Garden Party Dress",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca16.svg"
+  },
+  {
+    "id": 16,
+    "title": "RTwilightMyst Mystic Black Evening",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca17.svg"
+  },
+  {
+    "id": 17,
+    "title": "IvoryChic Classic Ivory Shift Dress with Minimalist Appeal",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca18.svg"
+  },
+  {
+    "id": 18,
+    "title": "MajesticMuse Royal Blue Satin Maxi Dress",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca19.svg"
+  },
+  {
+    "id": 19,
+    "title": "BoldElegance Striking Crimson Gown with Deep V-Neckline",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca20.svg"
+  },
+  {
+    "id": 20,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 21,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 22,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 23,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 24,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 25,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 26,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 27,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 28,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 29,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 30,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 31,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 32,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 33,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 34,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 35,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 36,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 37,
+    "title": "Safari Evening by LuxeWear",
+    "price": 25.0,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 38,
+    "title": "Royal Elegance by Glamouria",
+    "price": 30.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 39,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 40,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 41,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 42,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 43,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 44,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 45,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 46,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 47,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 48,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 49,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 50,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 51,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 52,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 53,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 54,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 55,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 56,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 57,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 58,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 59,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 60,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 61,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  },
+  {
+    "id": 62,
+    "title": "imeless Classic by VelvetRose",
+    "price": 40.00,
+    "image": "public/UpdateShop/ca1.svg"
+  }
+]
