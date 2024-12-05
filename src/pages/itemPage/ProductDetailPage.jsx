@@ -181,6 +181,24 @@ const ProductDetailPage = () => {
           ))}
         </div>
       </div>
+
+      <div className="recommendations">
+        <h2>Recommended Products</h2>
+        <div className="recommended-products">
+          {data.slice(4, 8).map((item) => (
+            <Link
+              to={`/products/${item.id}`}
+              key={item.id}
+              className="recommended-product-card"
+              onClick={handleLinkClick} // Добавляем обработчик клика
+            >
+              <img src={item.image} alt={item.title} />
+              <p>{item.title}</p>
+              <p>${item.price.toFixed(2)}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
