@@ -1,0 +1,119 @@
+/* Главная панель сортировки */
+.sorting-panel {
+  display: flex;
+  /* justify-content: space-between;   */
+  gap: 12px;  /* Расстояние между элементами */
+  padding: 0px 74px 23px;
+  align-items: center;  /* Вертикальное выравнивание элементов */
+}
+  
+  /* Каждый элемент сортировки */
+  .sorting-item {
+    position: relative;
+    width: 180px; /* Общая ширина кнопок */
+  }
+  
+  /* Заголовок сортировки */
+  .sort-header {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px;
+    /* text-transform: uppercase; */
+    padding: 10px 15px;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Предотвращаем перенос текста */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Текст заголовка */
+  .sort-title {
+    flex: 1; /* Заполняет оставшееся пространство */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Иконка стрелки */
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* Выпадающее меню */
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 99.2%; /* Меню полностью покрывает ширину кнопки */
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-top: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    animation: fadeIn 0.4s ease-out;
+  }
+  
+  /* Эффект появления меню */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Разделительная линия в выпадающем меню */
+  .dropdown-options::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #C9C9C9;
+    width: 100%;
+  }
+  
+  /* Опции выпадающего меню */
+  .dropdown-option {
+    padding: 10px 15px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #f1f1f1;
+  }
+
+   /* Индивидуальная ширина для каждого блока */
+   .sorting-item:nth-child(1) {
+    width: 229px; /* Popularity and Ratings */
+  }
+  
+  .sorting-item:nth-child(2) {
+    width: 275px; /* New Arrivals and Release Date */
+  }
+  
+  .sorting-item:nth-child(3) {
+    width: 232px; /* Brands and Collections */
+  }
+  
+  .sorting-item:nth-child(4) {
+    width: 133px; /* Price */
+  }

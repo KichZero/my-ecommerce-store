@@ -1,16 +1,25 @@
 import React from 'react';
-import './Breadcrumbs.scss';
+import '../../styles/pages/breadcrumbs.css'
 
-const Breadcrumbs = ({ path }) => {
+const Breadcrumbs = ({ breadcrumbs, onBreadcrumbClick }) => {
+  // Проверка на то, что breadcrumbs - это массив
+  if (!Array.isArray(breadcrumbs)) {
+    console.error('Expected breadcrumbs to be an array, but got:', breadcrumbs);
+    return <p>Error: breadcrumbs should be an array</p>;
+  }
+
+  if (breadcrumbs.length === 0) {
+    return <p>No breadcrumbs available</p>;
+  }
+
   return (
-    <nav className="breadcrumbs">
-      {path.map((crumb, index) => (
-        <span key={index}>
-          {crumb}
-          {index < path.length - 1 && ' / '}
+    <div className='breadcrumbs'>
+      {breadcrumbs.map((breadcrumb, index) => (
+        <span key={index} onClick={() => onBreadcrumbClick(index)}>
+          {breadcrumb}
         </span>
       ))}
-    </nav>
+    </div>
   );
 };
 

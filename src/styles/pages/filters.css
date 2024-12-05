@@ -3,11 +3,11 @@
 
 /* Главный контейнер фильтрации */
 .filters-container {
-  width: 220px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+
+  width: 216px;
+  height: 1334px;
+  /* padding: 80px; */
+
   font-family: 'Montserrat', sans-serif; /* Подключаем шрифт */
 }
 
@@ -21,7 +21,7 @@
   color: #333;
   text-align: left;
   border-bottom: 1px solid #C9C9C9; /* Линия под текстом */
-  padding-bottom: 8px; /* Отступ снизу для пространства между текстом и линией */
+  padding: 10px 0px; /* Отступ снизу для пространства между текстом и линией */
 }
 
 /* Каждая группа фильтров */

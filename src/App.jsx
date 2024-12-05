@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
-import ProductDetailPage from './pages/ProductDetailPage';
+import ProductDetailPage from './pages/itemPage/ProductDetailPage.jsx';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import { ToastContainer } from 'react-toastify';
@@ -29,6 +31,7 @@ const App = () => {
   
   return (
     <Elements stripe={stripePromise}>
+    
       <ToastContainer />
     <Router>
   
@@ -45,6 +48,7 @@ const App = () => {
       
       <Footer />
     </Router>
+   
   </Elements>
   );
 };

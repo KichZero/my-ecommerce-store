@@ -1,0 +1,151 @@
+.product-detail-page {
+  margin: 20px;
+  font-family: Montserrat;
+
+  text-align: left;
+}
+
+
+.product-detail-main {
+  padding: 32px 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 522px;
+  max-height: 629px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 12px;
+}
+
+.thumbnail {
+  max-width: 129px;
+  max-height: 172px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.product-info {
+  flex: 1;
+  padding-left: 99px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* SIZE */
+.product-size {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .size-dropdown {
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .size-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 14px;
+  }
+  
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .size-dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-top: none;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .size-option {
+    padding: 10px 15px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .size-option:hover {
+    background-color: #f9f9f9;
+  }
+
+  
+/* КНОПКИ */
+.add-to-bag,
+.add-to-favorites {
+  display: block;
+  margin: 10px 0;
+}
+
+.product-tabs details {
+  margin-bottom: 10px;
+}
+
+.suggestions,
+.recommendations {
+  margin-top: 30px;
+}
+
+.suggested-products,
+.recommended-products {
+  display: flex;
+  gap: 20px;
+}
+
+.suggested-product-card,
+.recommended-product-card {
+  flex: 1;
+  text-align: center;
+}
+.suggested-product-card,
+.recommended-product-card {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: inherit; /* Унаследуем цвет от родительского элемента */
+}

@@ -4,6 +4,7 @@
     background-color: #090909;
     /* padding: 10px 0; */
     padding: 17.75px;
+    z-index: 1000;
   }
   
   .menu-item {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import "../styles/navbar.css";
 import SearchBar from "./SearchBar";
 
@@ -7,7 +8,7 @@ const Navbar = ({ onCategoryChange }) => {
   const location = useLocation(); // Получаем текущий путь
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  // Определяем выделенный раздел в зависимости от текущего пути
+  // Определяем выделенный раздел в зависимости от текущего пути 
   useEffect(() => {
     if (location.pathname === "/woman") {
       setSelectedCategory("woman");

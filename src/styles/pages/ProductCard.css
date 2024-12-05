@@ -1,45 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
 .product-card {
   width: 240px;
   display: flex;
   flex-direction: column;
+  text-decoration: none; /* Убирает подчеркивание текста */
+  color: inherit; /* Наследует цвет текста */
+  cursor: pointer;
+}
 
+.product-card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+  transition: transform 0.2s ease-in-out;
+}
 
-  .product-image {
-    width: 240px;
-    height: 313px;
-    object-fit: cover;
-    opacity: 1;
-  }
+.product-image {
+  width: 100%; /* Заполняет всю ширину карточки */
+  height: 313px;
+  object-fit: cover; /* Обтекание изображения */
+}
 
-  .product-details {
-    width: 240px;
-    height: 96px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 16px 0px;
+.product-details {
+  width: 100%; /* Заполняет всю ширину карточки */
+  height: 96px;
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .product-name {
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 17.84px;
-      text-align: left;
-      margin: 0;
-      color: #000;
-    }
+.product-name, .product-price {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.84px;
+  text-align: left;
+  margin: 0;
+}
 
-    .product-price {
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 17.84px;
-      text-align: left;
-      margin: 0;
-      color: #A8A8A8;
-    }
-  }
+.product-price {
+  color: #A8A8A8;
 }
