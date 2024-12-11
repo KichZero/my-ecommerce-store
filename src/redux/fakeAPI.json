@@ -3,11 +3,15 @@
     "id": 0,
     "title": "Safari Evening by LuxeWear",
     "image": "/public/UpdateShop/ca1.svg",
-    "galleryImages": ["/public/UpdateShop/ca1.svg","/public/UpdateShop/ca1.1.svg","/public/UpdateShop/ca1.2.svg","/public/UpdateShop/ca1.3.svg"],
+    "galleryImages": ["/public/UpdateShop/ca1.svg", "/public/UpdateShop/ca1.1.svg", "/public/UpdateShop/ca1.2.svg", "/public/UpdateShop/ca1.3.svg"],
     "price": 17.00,
     "color": "Multicolor",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "description": "Elegant evening wear designed for special occasions."
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "description": "Material: High-quality lace and soft tulle for a comfortable fit.\nDesign: Strapless neckline with exquisite embroidery\nSilhouette: A-line cut that enhances your natural shape\nDetails: Elegant lace overlay and a dramatic train\nOccasions: Perfect for ceremonies, receptions, and timeless photos\nCreate unforgettable memories in the Timeless Romance Wedding Dress from Enchanted Bridal, a breathtaking choice that embodies elegance and beauty for your special day.",
+    "delivery": "Delivery Conditions: We offer courier service, postal delivery, and pickup options. Delivery typically takes 1 to 7 business days, depending on location and method. Delivery costs are calculated at checkout based on weight and distance, with free shipping available on orders over a certain amount. Returns are accepted within 14 days if items are unused and in original packaging. We are not responsible for delays due to unforeseen circumstances. For questions, please contact our support team.",
+    "payment": "We accept various payment options including credit/debit cards, PayPal, and bank transfers. All transactions are secured and encrypted for your safety. Payment is required at the time of order confirmation. If you encounter any issues, please contact our support team for assistance.",
+    "care": "Dry clean only; do not wash at home. Store in a breathable garment bag away from direct sunlight. Avoid contact with rough surfaces to prevent snags. Address any stains immediately by blotting gently with a clean cloth. If needed, use a low-heat setting or steam to remove wrinkles. For best results, consult a professional cleaner experienced with wedding attire.",
+    "sizeinf":"Our wedding dresses are available in a range of sizes from XXS to XXL. Please refer to our size chart for accurate measurements. For custom sizing, contact our support team for assistance. If you’re between sizes, we recommend choosing the larger size for a more comfortable fit."
   },
   {
     "id": 1,

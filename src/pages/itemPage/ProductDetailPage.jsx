@@ -3,11 +3,12 @@ import { useParams, Link } from "react-router-dom";
 import data from "../../redux/fakeAPI.json";
 import "../../styles/pages/ProductDetailPage.css";
 import arrow from "../../../public/paginationarrow/arrowdown.svg";
+import heartIcon from "../../../public/heart.svg"; 
+
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const product = data.find((item) => item.id === parseInt(id, 10));
-
   const [openTab, setOpenTab] = useState(null);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selectedSize, setSelectedSize] = useState("");
@@ -15,14 +16,6 @@ const ProductDetailPage = () => {
   if (!product) {
     return <p>Product not found</p>;
   }
-
-  const handleThumbnailClick = (img) => {
-    document.querySelector(".main-image").src = img;
-  };
-
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
 
   const toggleTab = (tab) => {
     setOpenTab(openTab === tab ? null : tab);
@@ -37,11 +30,14 @@ const ProductDetailPage = () => {
     setDropdownOpen(false);
   };
 
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="product-detail-page">
-      {/* Основной блок */}
       <div className="product-detail-main">
-        {/* Левая часть: Изображения */}
+        {/* Изображения */}
         <div className="product-images">
           <img className="main-image" src={product.image} alt={product.title} />
           <div className="thumbnail-gallery">
@@ -51,13 +47,15 @@ const ProductDetailPage = () => {
                 className="thumbnail"
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
-                onClick={() => handleThumbnailClick(img)}
+                onClick={() =>
+                  (document.querySelector(".main-image").src = img)
+                }
               />
             ))}
           </div>
         </div>
 
-        {/* Правая часть: Детали товара */}
+        {/* Детали товара */}
         <div className="product-info">
           <h1 className="product-title">{product.title}</h1>
           <p className="product-price">${product.price.toFixed(2)}</p>
@@ -65,7 +63,7 @@ const ProductDetailPage = () => {
             <strong>Colour:</strong> {product.color || "N/A"}
           </p>
 
-          {/* Выбор размера */}
+          {/* Dropdown для размеров */}
           <div className="product-size">
             <label htmlFor="size-select">Size:</label>
             <div
@@ -73,7 +71,7 @@ const ProductDetailPage = () => {
               onClick={toggleDropdown}
             >
               <div className="size-dropdown-header">
-                {selectedSize || "Select size"}
+                <p>{selectedSize || "Select size"}</p>
                 <img
                   src={arrow}
                   alt="Dropdown Arrow"
@@ -96,107 +94,89 @@ const ProductDetailPage = () => {
             </div>
           </div>
 
-          <button className="add-to-bag">ADD TO BAG</button>
-          <button className="add-to-favorites">♡</button>
+          {/* Кнопки */}
+          <div className="buttons-sect">
+            <button className="add-to-bag">ADD TO BAG</button>
+            <button className="add-to-favorites">
+              <img src={heartIcon} alt="Add to favorites" />
+            </button>
+          </div>
 
           {/* Вкладки */}
           <div className="product-tabs">
-            <div
-              className="product-tab"
-              onClick={() => toggleTab("description")}
-            >
-              <span>Description</span>
-              <img
-                className={`arrow-img ${openTab === "description" ? "rotate" : ""}`}
-                src={arrow}
-                alt="Dropdown Arrow"
-              />
-            </div>
-            {openTab === "description" && (
-              <div className="dropdown-content">
-                <p>{product.description || "No description available."}</p>
-              </div>
-            )}
-
-            <div className="product-tab" onClick={() => toggleTab("delivery")}>
-              <span>Delivery Conditions</span>
-              <img
-                className={`arrow-img ${openTab === "delivery" ? "rotate" : ""}`}
-                src={arrow}
-                alt="Dropdown Arrow"
-              />
-            </div>
-            {openTab === "delivery" && (
-              <div className="dropdown-content">
-                <p>Details about delivery...</p>
-              </div>
-            )}
-
-            <div className="product-tab" onClick={() => toggleTab("payment")}>
-              <span>Payment Methods</span>
-              <img
-                className={`arrow-img ${openTab === "payment" ? "rotate" : ""}`}
-                src={arrow}
-                alt="Dropdown Arrow"
-              />
-            </div>
-            {openTab === "payment" && (
-              <div className="dropdown-content">
-                <p>Accepted payment methods...</p>
-              </div>
-            )}
-
-            <div className="product-tab" onClick={() => toggleTab("care")}>
-              <span>Care Instructions</span>
-              <img
-                className={`arrow-img ${openTab === "care" ? "rotate" : ""}`}
-                src={arrow}
-                alt="Dropdown Arrow"
-              />
-            </div>
-            {openTab === "care" && (
-              <div className="dropdown-content">
-                <p>Instructions on how to care for this product...</p>
-              </div>
+            {["description", "delivery", "payment", "care", "sizeinf"].map(
+              (tab, index) => (
+                <div key={tab}>
+                  <div
+                    className={`product-tab ${index === 0 ? "first" : ""}`}
+                    onClick={() => toggleTab(tab)}
+                  >
+                    <span>
+                      {tab.charAt(0).toUpperCase() +
+                        tab.slice(1).replace("inf", " Info")}
+                    </span>
+                    <img
+                      className={`arrow-img ${openTab === tab ? "rotate" : ""}`}
+                      src={arrow}
+                      alt="Dropdown Arrow"
+                    />
+                  </div>
+                  <div
+                    className={`dropdown-content ${
+                      openTab === tab ? "open" : ""
+                    }`}
+                  >
+                    <p>
+                      {product[tab] ||
+                        `Content for ${tab} is currently unavailable.`}
+                    </p>
+                  </div>
+                </div>
+              )
             )}
           </div>
         </div>
       </div>
 
-      {/* Секции внизу */}
-      <div className="suggestions">
-        <h2>You Might Also Like</h2>
-        <div className="suggested-products">
-          {data.slice(0, 4).map((item) => (
-            <Link
-              to={`/products/${item.id}`}
-              key={item.id}
-              className="suggested-product-card"
-              onClick={handleLinkClick}
-            >
-              <img src={item.image} alt={item.title} />
-              <p>{item.title}</p>
-              <p>${item.price.toFixed(2)}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
 
-      <div className="recommendations">
-        <h2>Recommended Products</h2>
-        <div className="recommended-products">
-          {data.slice(4, 8).map((item) => (
-            <Link
-              to={`/products/${item.id}`}
-              key={item.id}
-              className="recommended-product-card"
-              onClick={handleLinkClick} // Добавляем обработчик клика
-            >
-              <img src={item.image} alt={item.title} />
-              <p>{item.title}</p>
-              <p>${item.price.toFixed(2)}</p>
-            </Link>
-          ))}
+        <div className="the-line"></div>
+      {/* Секции внизу */}
+      <div className="all-recommend">
+        
+        <div className="suggestions">
+          <h2>You Might Also Like</h2>
+          <div className="suggested-products">
+            {data.slice(0, 4).map((item) => (
+              <Link
+                to={`/products/${item.id}`}
+                key={item.id}
+                className="suggested-product-card"
+                onClick={handleLinkClick}
+              >
+                <img src={item.image} alt={item.title} />
+                <p>{item.title}</p>
+                <p>${item.price.toFixed(2)}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="recommendations">
+          <h2>Recommended Products</h2>
+          <div className="recommended-products">
+            {data.slice(3, 8).map((item) => (
+              <Link
+                to={`/products/${item.id}`}
+                key={item.id}
+                className="recommended-product-card"
+                onClick={handleLinkClick}
+              >
+                <img src={item.image} alt={item.title} />
+                <p>{item.title}</p>
+                <p>${item.price.toFixed(2)}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

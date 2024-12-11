@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/itemPage/ProductDetailPage.jsx';
-import CartPage from './pages/CartPage';
+import CartPage from './components/cart/CartPage.jsx';
 import CheckoutPage from './pages/CheckoutPage';
 import { ToastContainer } from 'react-toastify';
 
