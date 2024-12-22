@@ -30,7 +30,7 @@ const MainCard = () => {
       <div className="card-slider">
         <RecProduct />
         <SpecialOffers />
-        <CollectionBlock />
+        <CollectionBlock title="New Collection"/>
         <Brands />
 
       </div>

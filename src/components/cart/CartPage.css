@@ -1,0 +1,81 @@
+/* Стили для пустой корзины */
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 86px 0;
+    text-align: center;
+  }
+  
+  .empty-cart-icon {
+    width: 74px;
+    height: 74px;
+    margin-bottom: 20px;
+  }
+  
+  .empty-cart-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .empty-cart-description {
+    font-family: Comfortaa, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.84px;
+    color: #666;
+  }
+  
+  p.border-line {
+    border-top: 1px solid #c9c9c9;
+    width: 100%;
+  }
+  
+  /* Стили для корзины с товарами */
+  .cart-page {
+    padding: 20px;
+  }
+  
+  .cart-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+
+  /* line  */
+  p.border-line {
+    border-top: 1px solid #C9C9C9;
+    width: 100%;
+  }
+
+
+  .looking-for-something h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0px;
+    padding: 0;
+}
+
+.looking-for-something .collection-description {
+    font-family: Comfortaa, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 33px;
+}
+
+.looking-for-something .collection-grid {
+    justify-content: center;
+}

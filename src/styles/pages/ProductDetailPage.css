@@ -142,14 +142,67 @@ justify-content: space-between;
 max-width: 291px;
 }
 
-.add-to-bag{
-    width: 225px;
-    height: 54px;
-    border: #000;
-    background-color: #000;
-    color:#fff;
-    cursor: pointer;
+.add-to-bag {
+  width: 225px;
+  height: 54px;
+  border: #000;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+/* .add-to-bag.adding {
+  background-color: #6c6767b3;
+} */
+
+.basket {
+  position: absolute;
+  left: -30px; /* Начальная позиция слева */
+  width: 20px;
+  height: 20px;
+  animation: checkmarkSlide 1s forwards;
+}
+
+.add-to-bag.adding .checkmark {
+  animation: checkmarkSlide 1s forwards, textDisappear 0.3s forwards;
+}
+
+@keyframes checkmarkSlide {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 90px; /* Позиция после анимации */
+  }
+}
+
+@keyframes textDisappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.add-to-bag .text {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.add-to-bag.adding .text {
+  opacity: 0; /* Скрываем текст, когда происходит анимация */
+}
+
+
 
 .add-to-favorites {
     width: 54px;
@@ -318,4 +371,49 @@ max-width: 291px;
 }
 
 
+
+/* уведомление */
+.notification {
+  position: absolute;
+  background-color: #101010;
+  color: #f1eaea;
+  left: 295px;
+  padding: 3px;
+  border: 1px solid #938a8b;
+  border-radius: 15px 15px 15px 0px;
+  top: -23px;
+  width: 100px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0; /* Начальная прозрачность для скрытия */
+  animation: fadeIn 0.5s forwards; /* Плавное появление */
+}
+
+/* Анимация для появления */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация для исчезновения */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.notification.hide {
+  animation: fadeOut 0.5s forwards; /* Плавное исчезновение */
+}
 

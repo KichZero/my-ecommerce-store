@@ -1,61 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #FFFFFF;
-  position: relative;
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFFFFF;
+    position: relative;
 }
 
 .navbar-left {
-  display: flex;
-  gap: 20px;
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 24px; 
+    display: flex;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
 }
 
 .navbar-categories {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .navbar-categories li a {
-  color: #A8A8A8;
-  text-decoration: none;
-  transition: color 0.3s ease; /* Плавный переход */
+    color: #A8A8A8;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .navbar-categories li a:hover,
 .navbar-categories li a.active {
-  color: #000; /* Цвет для активного и наведенного элемента */
+    color: #000;
 }
 
 .navbar-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.5em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
 }
 
 .navbar-right {
-  display: flex;
-  gap: 20px;
-  padding-right: 3%;
-  align-items: center; /* Добавлено для вертикального центрирования */
+    display: flex;
+    gap: 20px;
+    padding-right: 3%;
+    align-items: center;
 }
 
 .navbar-icons {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    
 }
 
-.navbar-icons li a img {
-  width: 20px; /* Размер иконок можно подогнать по твоему макету */
-  height: 20px;
+
+
+.navbar-icons li img {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-container {
+    position: relative; /* Для позиционирования popup корзины */
+    display: flex;
+    align-items: center;
+}
+
+.cart-container:hover .cart-popup {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Стили для корзины */
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  width: 48px; /* Размер иконки корзины */
+  height: 48px;
+}
+
+/* Счетчик количества товаров */
+.cart-count {
+  position: absolute;
+  top: -5px; /* Смещение вверх */
+  right: -10px; /* Смещение вправо */
+  background-color: #E53935; /* Красный цвет */
+  color: #ffffff; /* Белый текст */
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%; /* Круг */
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

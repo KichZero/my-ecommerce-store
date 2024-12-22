@@ -3,453 +3,483 @@
     "id": 0,
     "title": "Safari Evening by LuxeWear",
     "image": "/public/UpdateShop/ca1.svg",
-    "galleryImages": ["/public/UpdateShop/ca1.svg", "/public/UpdateShop/ca1.1.svg", "/public/UpdateShop/ca1.2.svg", "/public/UpdateShop/ca1.3.svg"],
-    "price": 17.00,
+    "galleryImages": [
+      "/public/UpdateShop/ca1.svg",
+      "/public/UpdateShop/ca1.1.svg",
+      "/public/UpdateShop/ca1.2.svg",
+      "/public/UpdateShop/ca1.3.svg"
+    ],
+    "price": 17.0,
     "color": "Multicolor",
     "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "description": "Material: High-quality lace and soft tulle for a comfortable fit.\nDesign: Strapless neckline with exquisite embroidery\nSilhouette: A-line cut that enhances your natural shape\nDetails: Elegant lace overlay and a dramatic train\nOccasions: Perfect for ceremonies, receptions, and timeless photos\nCreate unforgettable memories in the Timeless Romance Wedding Dress from Enchanted Bridal, a breathtaking choice that embodies elegance and beauty for your special day.",
     "delivery": "Delivery Conditions: We offer courier service, postal delivery, and pickup options. Delivery typically takes 1 to 7 business days, depending on location and method. Delivery costs are calculated at checkout based on weight and distance, with free shipping available on orders over a certain amount. Returns are accepted within 14 days if items are unused and in original packaging. We are not responsible for delays due to unforeseen circumstances. For questions, please contact our support team.",
     "payment": "We accept various payment options including credit/debit cards, PayPal, and bank transfers. All transactions are secured and encrypted for your safety. Payment is required at the time of order confirmation. If you encounter any issues, please contact our support team for assistance.",
     "care": "Dry clean only; do not wash at home. Store in a breathable garment bag away from direct sunlight. Avoid contact with rough surfaces to prevent snags. Address any stains immediately by blotting gently with a clean cloth. If needed, use a low-heat setting or steam to remove wrinkles. For best results, consult a professional cleaner experienced with wedding attire.",
-    "sizeinf":"Our wedding dresses are available in a range of sizes from XXS to XXL. Please refer to our size chart for accurate measurements. For custom sizing, contact our support team for assistance. If you’re between sizes, we recommend choosing the larger size for a more comfortable fit."
+    "sizeinf": "Our wedding dresses are available in a range of sizes from XXS to XXL. Please refer to our size chart for accurate measurements. For custom sizing, contact our support team for assistance. If you’re between sizes, we recommend choosing the larger size for a more comfortable fit."
   },
   {
     "id": 1,
     "title": "Royal Elegance by Glamouria",
-    "galleryImages": ["/public/UpdateShop/ca2.svg","/public/UpdateShop/ca1.1.svg","/public/UpdateShop/ca1.2.svg","/public/UpdateShop/ca1.3.svg"],
-    "price": 48.00,
+    "galleryImages": [
+      "/public/UpdateShop/ca2.svg",
+      "/public/UpdateShop/ca1.1.svg",
+      "/public/UpdateShop/ca1.2.svg",
+      "/public/UpdateShop/ca1.3.svg"
+    ],
+    "price": 48.0,
     "image": "/public/UpdateShop/ca2.svg",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "description": "Elegant evening wear designed for special occasions."
+    "color": "Multicolor",
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "description": "Material: High-quality lace and soft tulle for a comfortable fit.\nDesign: Strapless neckline with exquisite embroidery\nSilhouette: A-line cut that enhances your natural shape\nDetails: Elegant lace overlay and a dramatic train\nOccasions: Perfect for ceremonies, receptions, and timeless photos\nCreate unforgettable memories in the Timeless Romance Wedding Dress from Enchanted Bridal, a breathtaking choice that embodies elegance and beauty for your special day.",
+    "delivery": "Delivery Conditions: We offer courier service, postal delivery, and pickup options. Delivery typically takes 1 to 7 business days, depending on location and method. Delivery costs are calculated at checkout based on weight and distance, with free shipping available on orders over a certain amount. Returns are accepted within 14 days if items are unused and in original packaging. We are not responsible for delays due to unforeseen circumstances. For questions, please contact our support team.",
+    "payment": "We accept various payment options including credit/debit cards, PayPal, and bank transfers. All transactions are secured and encrypted for your safety. Payment is required at the time of order confirmation. If you encounter any issues, please contact our support team for assistance.",
+    "care": "Dry clean only; do not wash at home. Store in a breathable garment bag away from direct sunlight. Avoid contact with rough surfaces to prevent snags. Address any stains immediately by blotting gently with a clean cloth. If needed, use a low-heat setting or steam to remove wrinkles. For best results, consult a professional cleaner experienced with wedding attire.",
+    "sizeinf": "Our wedding dresses are available in a range of sizes from XXS to XXL. Please refer to our size chart for accurate measurements. For custom sizing, contact our support team for assistance. If you’re between sizes, we recommend choosing the larger size for a more comfortable fit."
   },
   {
     "id": 2,
     "title": "imeless Classic by VelvetRose",
-    "galleryImages": ["/public/UpdateShop/ca3.svg","/public/UpdateShop/ca1.1.svg","/public/UpdateShop/ca1.2.svg","/public/UpdateShop/ca1.3.svg"],
-    "price": 77.00,
+    "galleryImages": [
+      "/public/UpdateShop/ca3.svg",
+      "/public/UpdateShop/ca1.1.svg",
+      "/public/UpdateShop/ca1.2.svg",
+      "/public/UpdateShop/ca1.3.svg"
+    ],
+    "price": 77.0,
     "image": "/public/UpdateShop/ca3.svg",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "description": "Elegant evening wear designed for special occasions."
+    "color": "Multicolor",
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "description": "Material: High-quality lace and soft tulle for a comfortable fit.\nDesign: Strapless neckline with exquisite embroidery\nSilhouette: A-line cut that enhances your natural shape\nDetails: Elegant lace overlay and a dramatic train\nOccasions: Perfect for ceremonies, receptions, and timeless photos\nCreate unforgettable memories in the Timeless Romance Wedding Dress from Enchanted Bridal, a breathtaking choice that embodies elegance and beauty for your special day.",
+    "delivery": "Delivery Conditions: We offer courier service, postal delivery, and pickup options. Delivery typically takes 1 to 7 business days, depending on location and method. Delivery costs are calculated at checkout based on weight and distance, with free shipping available on orders over a certain amount. Returns are accepted within 14 days if items are unused and in original packaging. We are not responsible for delays due to unforeseen circumstances. For questions, please contact our support team.",
+    "payment": "We accept various payment options including credit/debit cards, PayPal, and bank transfers. All transactions are secured and encrypted for your safety. Payment is required at the time of order confirmation. If you encounter any issues, please contact our support team for assistance.",
+    "care": "Dry clean only; do not wash at home. Store in a breathable garment bag away from direct sunlight. Avoid contact with rough surfaces to prevent snags. Address any stains immediately by blotting gently with a clean cloth. If needed, use a low-heat setting or steam to remove wrinkles. For best results, consult a professional cleaner experienced with wedding attire.",
+    "sizeinf": "Our wedding dresses are available in a range of sizes from XXS to XXL. Please refer to our size chart for accurate measurements. For custom sizing, contact our support team for assistance. If you’re between sizes, we recommend choosing the larger size for a more comfortable fit."
   },
   {
     "id": 3,
     "title": "Summer Breeze by SunChic",
-    "galleryImages": ["/public/UpdateShop/ca1.svg","/public/UpdateShop/ca1.1.svg","/public/UpdateShop/ca1.2.svg","/public/UpdateShop/ca1.3.svg"],
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 12.00,
+    "galleryImages": [
+      "/public/UpdateShop/ca1.svg",
+      "/public/UpdateShop/ca1.1.svg",
+      "/public/UpdateShop/ca1.2.svg",
+      "/public/UpdateShop/ca1.3.svg"
+    ],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 12.0,
     "image": "/public/UpdateShop/ca4.svg"
   },
   {
     "id": 4,
     "title": "Delicate Grace by PureSilk",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 22.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 22.0,
     "image": "/public/UpdateShop/ca5.svg"
   },
   {
     "id": 5,
     "title": "CityStyle Urban Lily Minimalist Dress with Floral Accents",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca6.svg"
   },
   {
     "id": 6,
     "title": "Moonlit Couture Magical Night Sequin Embellished Evening",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca7.svg"
   },
   {
     "id": 7,
     "title": "SweetPetal Tender Dreams Chiffon Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca8.svg"
   },
   {
     "id": 8,
     "title": "AuraFashion Golden Sunset Maxi Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca9.svg"
   },
   {
     "id": 9,
     "title": "Midnight Glow Starlit Night Beaded Evening Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca10.svg"
   },
   {
     "id": 10,
     "title": "BlossomQueen Orchid Mystery Dress with Exotic",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca11.svg"
   },
   {
     "id": 11,
     "title": "SatinSecrets Silk Romance Open Back Gown in Smooth Silk",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca12.svg"
   },
   {
     "id": 12,
     "title": "BloomBelle Spring Shine Floral Day Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca13.svg"
   },
   {
     "id": 13,
     "title": "AquaWear Ocean Fantasy Blue Dress Inspired by Sea Tones",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca14.svg"
   },
   {
     "id": 14,
     "title": "GlitterGown Evening Sparkle Glitter",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca15.svg"
   },
   {
     "id": 15,
     "title": "GardenGlam Floral Paradise Garden Party Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca16.svg"
   },
   {
     "id": 16,
     "title": "RTwilightMyst Mystic Black Evening",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca17.svg"
   },
   {
     "id": 17,
     "title": "IvoryChic Classic Ivory Shift Dress with Minimalist Appeal",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca18.svg"
   },
   {
     "id": 18,
     "title": "MajesticMuse Royal Blue Satin Maxi Dress",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca19.svg"
   },
   {
     "id": 19,
     "title": "BoldElegance Striking Crimson Gown with Deep V-Neckline",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca20.svg"
   },
   {
     "id": 20,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 21,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 22,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 23,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 24,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 25,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 26,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 27,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 28,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 29,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 30,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 31,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 32,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 33,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 34,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 35,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 36,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 37,
     "title": "Safari Evening by LuxeWear",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
     "price": 25.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 38,
     "title": "Royal Elegance by Glamouria",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 30.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 30.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 39,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 40,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 41,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 42,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 43,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 44,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 45,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 46,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 47,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 48,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 49,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 50,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 51,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 52,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 53,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 54,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 55,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 56,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 57,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 58,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 59,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 60,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 61,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   },
   {
     "id": 62,
     "title": "imeless Classic by VelvetRose",
-    "sizes": ["XXS","XS","S", "M", "L", "XL","XXL"],
-    "price": 40.00,
+    "sizes": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+    "price": 40.0,
     "image": "/public/UpdateShop/ca1.svg"
   }
 ]

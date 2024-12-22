@@ -1,21 +1,57 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import data from "../../redux/fakeAPI.json";
+import { addToCart } from "../../redux/cartSlice";
 import "../../styles/pages/ProductDetailPage.css";
 import arrow from "../../../public/paginationarrow/arrowdown.svg";
-import heartIcon from "../../../public/heart.svg"; 
+import heartIcon from "../../../public/heart.svg";
+import CartPopup from "../../components/cart/CartPopup";
+import basket from "../../../public/IconBasket.svg";
 
 
 const ProductDetailPage = () => {
+  const dispatch = useDispatch();
   const { id } = useParams();
   const product = data.find((item) => item.id === parseInt(id, 10));
   const [openTab, setOpenTab] = useState(null);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selectedSize, setSelectedSize] = useState("");
+  const [isCartVisible, setCartVisible] = useState(false);
+  const [notification, setNotification] = useState("");
+  const [isAdding, setIsAdding] = useState(false);
 
   if (!product) {
-    return <p>Product not found</p>;
+    return (
+      <div>
+        <p>Product not found</p>
+        <Link to="/">Вернуться на главную</Link>
+      </div>
+    );
   }
+
+  const handleAddToBag = () => {
+    if (selectedSize) {
+      setIsAdding(true); // Начинаем анимацию
+      dispatch(
+        addToCart({
+          id: product.id,
+          name: product.title,
+          price: product.price,
+          image: product.image,
+          size: selectedSize,
+          quantity: 1,
+        })
+      );
+      setNotification(""); // Сброс уведомления после добавления товара
+      setCartVisible(true); // Открываем корзину
+      setTimeout(() => {
+        setIsAdding(false); // Завершаем анимацию через 3 секунды
+      }, 3000);
+    } else {
+      setNotification("Пожалуйста, выберите размер!");
+    }
+  };
 
   const toggleTab = (tab) => {
     setOpenTab(openTab === tab ? null : tab);
@@ -80,7 +116,7 @@ const ProductDetailPage = () => {
               </div>
               {isDropdownOpen && (
                 <ul className="size-dropdown-list">
-                  {product.sizes.map((size, index) => (
+                  {product.sizes?.map((size, index) => (
                     <li
                       key={index}
                       className="size-option"
@@ -92,11 +128,29 @@ const ProductDetailPage = () => {
                 </ul>
               )}
             </div>
+            {/* Уведомление */}
+            {notification && <div className="notification">{notification}</div>}
           </div>
 
-          {/* Кнопки */}
+          {/* Всплывающее окно корзины */}
+          <CartPopup
+            isVisible={isCartVisible}
+            onClose={() => setCartVisible(false)}
+          />
+
           <div className="buttons-sect">
-            <button className="add-to-bag">ADD TO BAG</button>
+            <button
+              className={`add-to-bag ${isAdding ? "adding" : ""}`}
+              onClick={handleAddToBag}
+            >
+              <span className={`text ${isAdding ? "hidden" : ""}`}>
+                ADD TO BAG
+              </span>
+              {isAdding ? (
+                <img src={basket} alt="Added" className="basket" />
+              ) : null}
+            </button>
+
             <button className="add-to-favorites">
               <img src={heartIcon} alt="Add to favorites" />
             </button>
@@ -138,11 +192,9 @@ const ProductDetailPage = () => {
         </div>
       </div>
 
-
-        <div className="the-line"></div>
+      <div className="the-line"></div>
       {/* Секции внизу */}
       <div className="all-recommend">
-        
         <div className="suggestions">
           <h2>You Might Also Like</h2>
           <div className="suggested-products">

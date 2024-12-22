@@ -11,7 +11,7 @@ import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/itemPage/ProductDetailPage.jsx';
 import CartPage from './components/cart/CartPage.jsx';
 import CheckoutPage from './pages/CheckoutPage';
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
 
 import '../src/styles/index.css'
 import MenuDropdown from './components/menudropdown/MenuDropdown.jsx';
@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Elements stripe={stripePromise}>
     
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     <Router>
   
       <Navbar onCategoryChange={handleCategoryChange} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/allCard/newcollection.css'; // Стили для блока
 
-const CollectionBlock = () => {
+const CollectionBlock = ({ title = "New Collection", description = "" }) => {
   const collections = [
     {
       title: 'Spring Dresses',
@@ -25,7 +25,8 @@ const CollectionBlock = () => {
 
   return (
     <div className="collection-container">
-      <h2>New Collection</h2>
+      <h2>{title}</h2>
+      {description && <p className="collection-description">{description}</p>}
       <div className="collection-grid">
         {collections.map((item, index) => (
           <a key={index} href={item.link} className="collection-card">
