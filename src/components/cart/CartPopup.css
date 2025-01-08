@@ -1,147 +1,166 @@
-/* Общие стили для контейнера */
 .cart-popup {
     position: absolute;
-    top: 100%; /* Позиционируем под иконкой корзины */
-    right: 0; /* Привязываем к правому краю родителя */
-    width: 369px; /* Ширина окна корзины */
+    right: -15px;
+    top: 80px;
+    width: 369px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+    
     z-index: 1000;
     opacity: 0;
-    visibility: hidden; /* По умолчанию скрыто */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    height: auto; /* Подстраиваем высоту под контент */
+    visibility: hidden;
+    height: 454px;
     display: flex;
     flex-direction: column;
-}
-
-/* Видимость корзины */
-.cart-popup.visible {
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+  }
+  
+  .cart-popup.open {
     opacity: 1;
-    visibility: visible;
-}
-
-/* Шапка окна */
-.cart-popup-header {
-    padding: 16px;
+    /* visibility: visible; */
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+  .cart-popup.close {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+  
+  .cart-popup-header {
+    padding: 0px 16px;
     height: 69px;
     background-color: #575757;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.cart-popup-header h2 {
-    font-family: Montserrat, sans-serif;
+  }
+  
+  .cart-popup-header h2 {
+    font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
-    color: #ffffff;
-    margin: 0;
-}
-
-/* Содержимое корзины */
-.cart-popup-body {
+    text-align: left;
+    color: #ffffff !important;
+  }
+  
+  /* Содержимое корзины */
+  .cart-popup-body {
     flex-grow: 1;
     overflow-y: auto;
     padding: 16px;
-}
-
-.empty-cart {
+  }
+  
+  .empty-cart {
     text-align: center;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     color: #555;
-}
-
-.cart-items-list {
+  }
+  
+  .cart-items-list {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.cart-item {
+  }
+  
+  .cart-item {
     display: flex;
     gap: 16px;
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #C9C9C9;
-}
-
-.cart-item-image {
-    width: 99px;
-    height: 130px;
+  }
+  .cart-item:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+  .cart-item-image {
+    width: 99px !important;
+    height: 130px !important;
     object-fit: cover;
-}
-
-.cart-item-details {
+  }
+  
+  .cart-item-details {
     flex: 1;
     display: flex;
     flex-direction: column;
-}
-
-.cart-item-price {
+  }
+  
+  .cart-item-price {
     margin: 0;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #000;
-}
-
-.cart-item-name {
+    text-align: left;
+  }
+  
+  .cart-item-name {
     font-size: 14px;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
-    margin: 8px 0;
-}
-
-.cart-item-details-row {
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .cart-item-details-row {
     display: flex;
     gap: 16px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: #666;
-}
-
-.cart-item-quantity {
+    text-align: left;
+  }
+  
+  .cart-item-quantity {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: #666;
-}
-
-/* Значок корзины */
-.cart-icon {
+  }
+  
+  .trash-icon {
     width: 24px;
     height: 24px;
     cursor: pointer;
-}
-
-.trash-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-/* Футер окна */
-.cart-popup-footer {
-    padding: 16px;
+    align-self: flex-end;
+  }
+  
+  .cart-popup-footer {
+    padding: 0px 16px;
     border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-}
-
-.total-section {
+    margin-top: auto;
+  }
+  
+  .total-section {
+    font-family: Montserrat;
+    font-size: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.total-price {
+    height: 61px;
+  }
+  
+  
+  .total-price {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
     color: #000;
-}
+  }
+
+
+  .cart-page-header {
+    color: #000;
+    text-align: center;
+  }
+
+ 

@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     background-color: #FFFFFF;
     position: relative;
+    height: 80px;
 }
 
 .navbar-left {
     display: flex;
-    gap: 20px;
+   
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
 }
@@ -41,9 +42,9 @@
 }
 
 .navbar-right {
+    height: 100%;
     display: flex;
-    gap: 20px;
-    padding-right: 3%;
+   padding-right: 66px;
     align-items: center;
 }
 
@@ -51,15 +52,14 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    cursor: pointer;
-    
+    height: 100%; /* Контейнер иконок занимает всю высоту навигации */
 }
 
 
 
 .navbar-icons li img {
     width: 20px;
-    height: 20px;
+    height: 100%;
 }
 
 .cart-container {
@@ -78,6 +78,7 @@
 .cart-container {
   position: relative;
   display: inline-block;
+  height: 100%;
 }
 
 .cart-icon {
@@ -88,8 +89,8 @@
 /* Счетчик количества товаров */
 .cart-count {
   position: absolute;
-  top: -5px; /* Смещение вверх */
-  right: -10px; /* Смещение вправо */
+  top: 27px; /* Смещение вверх */
+  right: -8px; 
   background-color: #E53935; /* Красный цвет */
   color: #ffffff; /* Белый текст */
   font-family: "Montserrat", sans-serif;
@@ -103,3 +104,5 @@
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+

@@ -9,7 +9,6 @@ import heartIcon from "../../../public/heart.svg";
 import CartPopup from "../../components/cart/CartPopup";
 import basket from "../../../public/IconBasket.svg";
 
-
 const ProductDetailPage = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
@@ -46,8 +45,8 @@ const ProductDetailPage = () => {
       setNotification(""); // Сброс уведомления после добавления товара
       setCartVisible(true); // Открываем корзину
       setTimeout(() => {
-        setIsAdding(false); // Завершаем анимацию через 3 секунды
-      }, 3000);
+        setIsAdding(false); // Завершаем анимацию через 1 секунду
+      }, 1000);
     } else {
       setNotification("Пожалуйста, выберите размер!");
     }
@@ -96,7 +95,7 @@ const ProductDetailPage = () => {
           <h1 className="product-title">{product.title}</h1>
           <p className="product-price">${product.price.toFixed(2)}</p>
           <p className="product-color">
-            <strong>Colour:</strong> {product.color || "N/A"}
+            <strong>Color:</strong> {product.color || "N/A"}
           </p>
 
           {/* Dropdown для размеров */}
@@ -146,9 +145,9 @@ const ProductDetailPage = () => {
               <span className={`text ${isAdding ? "hidden" : ""}`}>
                 ADD TO BAG
               </span>
-              {isAdding ? (
+              {isAdding && (
                 <img src={basket} alt="Added" className="basket" />
-              ) : null}
+              )}
             </button>
 
             <button className="add-to-favorites">

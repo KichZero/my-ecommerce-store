@@ -7,7 +7,7 @@
 }
 
 .product-detail-main {
-  max-width: 1438px;
+  /* max-width: 1438px; */
   padding: 32px 0px 40px 200px;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .product-info {
-  flex: 1;
+  /* flex: 1; */
   padding-left: 100px;
 }
 
@@ -145,7 +145,7 @@ max-width: 291px;
 .add-to-bag {
   width: 225px;
   height: 54px;
-  border: #000;
+  border: none;
   background-color: #000;
   color: #fff;
   cursor: pointer;
@@ -154,52 +154,59 @@ max-width: 291px;
   align-items: center;
   position: relative;
   overflow: hidden;
+  /* border-radius: 30px; */
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-/* .add-to-bag.adding {
-  background-color: #6c6767b3;
-} */
-
-.basket {
-  position: absolute;
-  left: -30px; /* Начальная позиция слева */
-  width: 20px;
-  height: 20px;
-  animation: checkmarkSlide 1s forwards;
-}
-
-.add-to-bag.adding .checkmark {
-  animation: checkmarkSlide 1s forwards, textDisappear 0.3s forwards;
-}
-
-@keyframes checkmarkSlide {
-  0% {
-    left: -30px;
-  }
-  100% {
-    left: 90px; /* Позиция после анимации */
-  }
-}
-
-@keyframes textDisappear {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.add-to-bag.adding {
+  background-color: #938a8b; /* Зеленый фон во время добавления */
+  color: #fff;
+  transform: scale(0.95); /* Эффект сжатия */
 }
 
 .add-to-bag .text {
-  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
 .add-to-bag.adding .text {
-  opacity: 0; /* Скрываем текст, когда происходит анимация */
+  opacity: 0; /* Прячем текст */
+}
+
+.add-to-bag .basket {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 24px;
+  height: 24px;
+  transition: transform 0.5s ease;
+}
+
+.add-to-bag.adding .basket {
+  transform: translate(-50%, -50%) scale(1); /* Увеличиваем значок корзинки */
+}
+
+.add-to-bag::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.5);
+  /* border-radius: 50%; */
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.add-to-bag.adding::after {
+  width: 200%;
+  height: 200%;
+  opacity: 0;
 }
 
 
@@ -283,10 +290,7 @@ max-width: 291px;
   align-items: center; /* Центрирование контента */
 }
 
-.suggestions,
-.recommendations {
-  padding: 0 80px; /* Отступы по краям экрана */
-}
+
 .recommendations {
   padding-bottom: 196px; /* Отступы по краям экрана */
 }
@@ -377,7 +381,7 @@ max-width: 291px;
   position: absolute;
   background-color: #101010;
   color: #f1eaea;
-  left: 295px;
+  left: 87%;
   padding: 3px;
   border: 1px solid #938a8b;
   border-radius: 15px 15px 15px 0px;

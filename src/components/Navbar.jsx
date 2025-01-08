@@ -14,7 +14,10 @@ const Navbar = ({ onCategoryChange = () => {} }) => {
   const cartItems = useSelector((state) => state.cart.items);
 
   // Считаем общее количество товаров
-  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const totalItems = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
 
   // Обновляем выбранную категорию
   useEffect(() => {
@@ -65,29 +68,31 @@ const Navbar = ({ onCategoryChange = () => {} }) => {
       {/* Правая сторона */}
       <div className="navbar-right">
         <ul className="navbar-icons">
-          <li>
+          <li className="icon-container">
             <SearchBar />
           </li>
-          <li>
+          <li className="icon-container">
             <Link to="/profile">
               <img src="/IconAccount.svg" alt="Profile" />
             </Link>
           </li>
-          <li>
+          <li className="icon-container">
             <Link to="/favorite">
               <img src="/IconSaved.svg" alt="Favorites" />
             </Link>
           </li>
           <li
+            className="icon-container cart-container"
             onMouseEnter={() => setCartVisible(true)}
             onMouseLeave={() => setCartVisible(false)}
-            className="cart-container"
           >
             <Link to="/cart">
-            <img src="/IconBasket.svg" alt="Cart" className="cart-icon" />
-            {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
-            {isCartVisible && <CartPopup />}
+              <img src="/IconBasket.svg" alt="Cart" className="cart-icon" />
+              {totalItems > 0 && (
+                <span className="cart-count">{totalItems}</span>
+              )}
             </Link>
+            {isCartVisible && <CartPopup isVisible={isCartVisible} />}
           </li>
         </ul>
       </div>
