@@ -11,9 +11,11 @@ import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/itemPage/ProductDetailPage.jsx';
 import CartPage from './components/cart/CartPage.jsx';
 import CheckoutPage from './pages/CheckoutPage';
+import Favorite from './pages/favorite/favoritePage.jsx';
+import UserAuth from './pages/loginuser/profile.jsx';
 // import { ToastContainer } from 'react-toastify';
 
-import '../src/styles/index.css'
+import '../src/styles/index.css';
 import MenuDropdown from './components/menudropdown/MenuDropdown.jsx';
 
 
@@ -44,6 +46,8 @@ const App = () => {
         <Route path="/products/:id" element={<ProductDetailPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/profile" element={<UserAuth />} />
+        <Route path="/favorite" element={<Favorite/>} />  
       </Routes>
       
       <Footer />

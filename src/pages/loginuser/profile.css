@@ -1,0 +1,170 @@
+/* Общий стиль контейнера */
+.main-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 200px;
+    padding-top: 80px;
+}
+
+.img-cont img {
+    max-width: 100%;
+    width: 94px;
+    height: auto;
+    padding-bottom: 24px;
+}
+
+/* Контейнер аутентификации */
+.auth-container {
+    width: 630px !important;
+    height: auto;
+    
+    background: #fff;
+    border: 1px solid #C9C9C9;
+
+    padding-bottom: 113px;
+}
+
+/* Вкладки (Create account / Log in) */
+.auth-tabs {
+    display: flex;
+    position: relative;
+    width: 100%; /* Используем ширину контейнера */
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #C9C9C9;
+    cursor: pointer;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.tab-button.active {
+    color: #000;
+}
+
+.divider {
+    width: 1px; /* Создаём тонкую вертикальную линию */
+    background: #C9C9C9;
+    height: 71px; /* Высота, чтобы соответствовать табам */
+    margin: 0; /* Убираем отступы */
+}
+
+.horizontal-line {
+    
+    border: none;
+    border-top: 1px solid #C9C9C9;
+    margin: 0 auto; /* Центрируем горизонтальную линию */
+    position: relative;
+    top: -1px; /* Подгоняем для точного соединения с divider */
+}
+
+/* Форма */
+.auth-form {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-form input,
+.auth-form select {
+    width: 414px;
+    height: 49px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.input-field {
+    text-align: center;
+}
+
+.input-field label {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #A8A8A8;
+}
+
+.submit-button {
+    width: 414px;
+    height: 54px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #333;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #C9C9C9;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Поля для Date of Birth */
+.date-of-birth {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.date-of-birth select {
+    height: 49px;
+    border: 1px solid #000000;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.date-of-birth select:focus {
+    border-color: #000;
+}
+
+.date-of-birth .day {
+    width: 89px;
+}
+
+.date-of-birth .month {
+    width: 196px;
+}
+
+.date-of-birth .year {
+    width: 89px;
+}
